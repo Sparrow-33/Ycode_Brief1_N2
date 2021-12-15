@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-1:white;
+    --primary-2:black;
+    --primary-3:#999999;
+    --fw-regular:400;
+    --fw-medium:500;
+    --fw-bold:700;
+}
+
+body{
+    background:var(--primary-2);
+    /* width:100%; */
+    height:100vh;
+    font-family:Poppins,sans-serif ;
+    font-weight: var(--fw-regular);
+    font-size: 1.125rem;
+    overflow-x: hidden;
+    
+}
+
+/* Nav bar section */
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    gap:7rem;
+    overflow: hidden;
+}
+
+.navList
+{
+    position: relative;
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    list-style: none;
+    margin-top: 1rem ;
+    
+}
+.navList>li>a
+{
+    color: var(--primary-1);
+    font-weight: var(--fw-medium);
+    font-size: 1em;
+}
+.logo{
+    width: 250px;
+    height: 100px;
+    background:var(--primary-2);
+    
+    
+}
+.join{
+    height: 40px;
+    width: 40px;
+    margin-left: 200px;
+}
+a
+{
+    text-decoration: none;
+}
+
+/* seperation line */
+
+.line
+{
+    position: absolute;
+    width: 2px;
+    height: 500px;
+    background-color: var(--primary-1);
+    left: 50%;
+    top: -50%;
+    transform: rotate(90deg);
+    box-shadow: 700px 0 0  var(--primary-1) ;
+}
+
+
+
+/* Main Section */
+
+/* Hero banner Section */
+.hero{
+    position: relative;
+    max-width:100%;
+
+    /* overflow:hidden; */
+    
+}
+.banner_title
+{
+    position: absolute;
+    color: var(--primary-1);
+    font-weight: var(--fw-bold);
+    font-size: 2.5em;
+    letter-spacing: 3px;
+    margin-left: 9%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.banner_title > span
+{
+    position: absolute;
+    display: block;
+    font-size: 2em;
+    width: max-content;
+    color: var(--primary-2);
+    text-shadow:2px 2px 0 rgb(255, 255, 255) ;
+    margin-top: -20px;
+}
+
+.dark_car
+{
+    position: absolute;
+    z-index: -99;
+    margin-left: 35%;
+    top: 60px;
+    height: 400px;
+}
+
+.tour_bttn
+{
+    position: relative;
+    background:var(--primary-1);
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 100vh;
+    color: var(--primary-2);
+    font-weight: var(--fw-medium);
+    top:350px;
+    left: 120px;
+}
+
+/* cut sections */
+.tour_bttn::after
+{
+    position:absolute;
+    content:'';
+    background: var(--primary-1);
+}
+/* Second Section Home page */
+
+.service
+{
+    position:relative;
+    color: var(--primary-1);
+    height: max-content;
+    top:500px;
+}
+
+.parent{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    bottom: -20%;
+    gap: 2em;
+    left: 50%;
+    
+}
+
+.child
+{
+   width: 500px;
+   display: flex;
+
+}
+.child > p{
+    
+    margin:10px;
+    font-family: var(--fw-medium);
+    font-size: 0.9em;
+    
+   
+}
+
+.info
+{
+    height: 120px;
+    width: 200px;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+.service_slogan
+{
+    
+    display: flex;
+    flex-direction: row;
+    
+}
+.slogan_text
+{
+    position: absolute;
+    color:var(--primary-1);
+    left: 10%;
+    top:2em;
+    font-weight: var(--fw-bold);
+    font-size: 4em;
+    border-right: solid 2px;
+    padding-right: 1em;
+
+    
+}
+
+
+/* Foooooter */
+
+.social_container
+{
+    position: relative;
+    top:600px;
+    background-color: var(--primary-2);
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    gap: 4em;
+    height: 100px;
+
+}
+.links
+{
+   display: flex;
+   gap: 2em;
+   
+   
+}
+.links> a{
+    color: var(--primary-3);
+}
+.social_links
+{
+    display: flex;
+    gap:2em;
+    align-items: baseline;
+   
+}
